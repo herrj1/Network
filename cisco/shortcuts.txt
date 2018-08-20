@@ -1,0 +1,10 @@
+Shortcuts
+---------
+
+Recall previous command - Up arrow or <CTRL> p
+Recall next command - Down arrow or <CTRL> n
+Beginning of command - <CTRL> a
+End of command - <CTRL> e
+Delete input - <CTRL> d
+Exit configuration mode - <CTRL> z
+Complete command - TAB

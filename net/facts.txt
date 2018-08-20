@@ -1,0 +1,184 @@
+Net Standards
+-------------
+802.3 - Ethernet - 10,100,1000mbps - CSMA/CD - Physical star, logical bus, UTP, STP, fiber optics
+802.5 - Token ring - 4, 16 mbps - Token passing - physical star, logical ring - STP
+802.11 - wireless net - 1, 11, 54 mbps - CSMA/CA - Cell - atmosphere
+FDDI - fiber distributed data interface - 100mbps - token passing - dual ring - fiber optics
+
++++++++++++++++++++++++++++++++++
+
+Ethernet specs
+--------------
+10BASE-T - cat3 UTP - 100m - 10mbps - RJ45 - star - IEEE802.3i
+10BASE-FL - MMF - 2000m - 10mbps - ST - star - IEEE802.3j
+100BASE-TX - Cat5 UTP, Cat5e FTP - 100m - 100mbps - RJ45 - star - IEEE802.3u
+100BASE-FX - micro MMF - 412 m(half duplex), 2000 m(full duplex) - 100 mbps(half duplex), 200 mbps(full duplex) - SC - star, point-point - IEEE802.3u
+1000BASE-T - cat5e/cat6 UTP(4 pairs) - 100m - 1GBPS - RJ45 - star - IEEE802.3ab
+1000BASE-CX - twinax STP - 25m - 1GBPS - HSSDC - star, point-point - IEEE802.3z
+1000BASE-SX - Micro MMF - 550m(50u), 275m(62.5u) - 1GBPS - SC - point-point - IEEE802.3z
+1000BASE-LX - SMF or MMF - 550m(MMF), 5000m(SMF) - 1GBPS - SC, LC - point-point - IEEE802.3z
+10GBASE-SR - MMF - 300m - 10GBPS - 850nm serial LAN - point-point - IEEE802.3ae
+10GBASE-LR - MMF - 10,000m - 10GBPS - 1310nm serial LAN - point-point - IEEE802.3ae
+10GBASE-ER - MMF - 40,000m - 10GBPS - 1550nm serial LAN - point-point - IEEE802.3ae
+
++++++++++++++++++++++++++++++++++
+
+wireless net
+------------
+IEEE802.11 legacy - 2mbps - 2.4GHZ - FHSS or DSSS - point-point - 30m
+IEEE802.11b WIFI - 11mbps - 2.4GHZ - DSSS with CCK - point-point - 30m
+IEEE802.11a WIFI - 54mbps - 5GHZ - OFDM - point-point - 30m
+IEEE802.11g WIFI - 54mbps - 2.4GHZ - >20mbps: OFDM, <20mbps: DSSS with CCK - point-point - 30m
+IEEE802.11n WIFI - 540mbps - 2.4GHZ - MIMO - point-point - 50m
+Bluetooth - 2 mbps - 2.45GHZ - FHSS - Scatternet - 10m
+Infrared - 100kbps~ 16 mbps - 100GHZ ~ 1000THZ - Baseband - point-point LOS - 1m
+IEEE802.16 WIMAX - 75mbps - 2GHZ ~ 11GHZ, 66GHZ - BPSK - point-point cellular - 30km
+
+++++++++++++++++++++++++++++++++
+
+layers
+------
+7- Application - network appplication services - data - FTP, TFTP, HTTP, SMTP, SMB, NCP, Telnet, NTP, file and print, DNS - gateway
+6- presentation - encryption, formatting, compression, translation - data - ASCII, JPEF, GIF, TIFF, MIDI, MPEG, MIME, Quicktime - gateway
+5- session - establishes, maintains, manages network, connections and sessions - data - RPC, ZIP, SCP, SQL, NetBIOS, NFS, ASP, LDAP, SSL, SMB - gateway
+4- transport - end-end error recovery, connectivity, flow control - segments - TCP, SPX, UDP, NBP, NCP, NetBEUI, SCTP - gateway
+3- network - routing, forwarding of packets, sequencing of datagram - packets - IP, IPX, ARP, RARP, DHCP, BootP, ICMP, RIP, BGP, OSPF, IPSec - Router, brouter
+2- data link - encoding/decoding of packets into bits; frame synchronization, error checking - frames - MAC, LLC, PPP, ATM, Frame relay, 802.11b/g, L2TP, FDDI- switch, bridge
+1- physical - eletrical, mechanical, lightwave, radio frequency, media specifications - bits - Ethernet, wifi, token ring, BRI, RS232, V.35 - hub, NIC, WAP
+
+++++++++++++++++++++++++++++++++
+Physical media types
+--------------------
+twisted paid - consists of multiple twisted pairs - UTP, STP, ScTP - Cat3(16mhz),cat5(100mhz), cat5e(100mhz), cat6(250mhz)
+coaxial cables - consists of center conductor with plastic jacket - 750, 500 - RG58(thinnet), RG8(thicknet), RG62(ARCnet)
+fiber optic cable - consists of center glass with glass cladding - SMF, MMF - 8~10um(SMF), 50~62.5um(MMF), 125um(clad), EMI immune
+
+++++++++++++++++++++++++++++++++
+
+types of media connectors
+-------------------------
+RJ11 - Registered jack modular connector(6P2C) - snap-in - telephone equipments, PBX - bell
+RJ45 - Registered jack modular connector(8P8C) - snap-in - twisted paid ethernet, PoE, ISDN, T1, token ring - bell
+F-type - F-type coaxial connector (75Q) - screw-on - broadband cable, CATV, CCTV 
+BNC - Bayonet nut coupling(50Q) - bayonet - thin ethernet, RF applications - bell
+ST - Straight tip fiber optic connector - bayonet - fiber optic ethernet - AT&T
+SC - Subscriber/square connector - snap-in - fiber optic gigabit ethernet - IBM
+LC - Local connector(SFF) - snap-in - fiber optic gigabit ethernet - lucent
+MT-RJ - Mechanical transfer registered jack(SFF) - snap-in - fiber optic ethernet - AMP
+IEEE1394 - firewire(SFF) - snap-in - digital devices, consumer electronics - apple, sony, etc
+USB - Universal Serial Bus(1.1&2.0) - snap-in - digital devices, computer peripherals - HP, Compaq, lucent, MS, Intel, NEC, Phillips
+
++++++++++++++++++++++++++++++
+network connectivity devices
+----------------------------
+hub - connects all nodes - layer 1 - concentrator(passive), repeater(active), MAU
+switch - layer 2 - multiport bridge, configure VLANs
+bridge - layer 2 - wired or wireless
+router - layer 3 - brouter, IOS
+gateway - layer 4, 5, 6, 7 - connection to ISP, PABX
+NIC - layer 1, 2 - PCI, USB, PCMCIA, Built-in M/B
+CSU/DSU - .... - T1, T3, V.35 interface
+ISDN Adapter - .... - BRI TA
+WAP - layer 1, 2 - infrastructure mode, WIFI
+modem - ..... - POTS(V.92),xDSL, cable
+transceiver - ..... - media converter, DIX/AUI
+firewall - ..... - port blocking, packet filtering, proxy server, DMZ
+
+++++++++++++++++++++++++++++++
+
+classful IP addressing
+----------------------
+CLASS A - 1.0.0.0~126.0.0.0 - 255.0.0.0 - 126 - 16,777,214
+CLASS B - 128.0.0.0-191.0.0.0 - 255.255.0.0 - 16,384 - 65,534
+CLASS C - 192.0.0.0-223.0.0.0 - 255.255.255.0 - 2,097,152 - 254
+
+++++++++++++++++++++++++++++++
+
+reserved IP address blocks
+--------------------------
+0.0.0.0/8 - network or wire address - RFC1700
+10.0.0.0/8 - private network(class A) - RFC1918
+14.0.0.0/8 - public data network - RFC1700
+39.0.0.0/8 - reserved - RFC1797
+127.0.0.0/8 - localhost - RFC1700
+128.0.0.0/16 - Reserved - ...
+169.254.0.0/16 - zeroconf, APIPA - RFC3927
+172.16.0.0/12 - private network - RFC1918
+192.0.2.0/24 - Documentation and example code - RFC3330
+192.88.99.0/24 - IPV6 to IPV4 relay - RFC3068
+192.18.0.0/15 - Network benchmark tests - RFC2544
+223.255.255.0/24 - reserved - RFC3330
+224.0.0.0/4 - multicasts (class D) - RFC3171
+240.0.0.0/4 - experimental(class E) - RFC1700
+255.255.255.255 - Broadcast - ...
+
++++++++++++++++++++++++++++++++++
+physical and logical addressing
+-------------------------------
+MAC - 48bits - hexadecimal - colon - 8-bit hexadecimal digits(2 hex) - 12x10^9 combinations - 00:50:DA:C3:8A:F9
+IPV4 - 32bits - dotted-decimal - dots - 8-bit binary coded decimal digits - 4.3x10^9 addresses - 207.142.131.235
+IPV6 - 128bits - hexadecimal - colon - 16bit hexadecimal digits - 3.4x10^38 addresseses - 2001:0DB8:0::0::1428:57AB
+
+
+++++++++++++++++++++++++++++++++++
+well-known ports
+----------------
+20 - FTP - reliable transfer of data, uses TCP
+21 - FTP - Provides flow control, uses TCP
+22 - SSH - Executes command and moves files; remote login protocol, uses TCP
+23 - TELNET - connects a remote computer to a server, uses TCP
+25 - SMTP - Delivers emails between email servers; sending of emails; uses TCP
+53 - DNS - Translates hostnames to IP addresses; uses TCP(Zone transfers), UDP(queries)
+69 - TFTP - Simple transfer of data; uses UDP
+80 - HTTP - Opens a browser connection to a webpage; uses TCP
+110 - POP3 - Delivers emails between a mail server and client; receiving of emails; uses TCP
+119 - NNTP - Views and writes news articles for newsgroups; uses TCP
+123 - NTP - sets computer clock to standard time; uses UDP
+143 - IMAP4 - downloads emails; stores and searches messages from newsgroups; receiving of emails; uses tcp
+443 - HTTPS - Allows browsers and servers to authenticate and encrypt network packets; uses SSL; uses TCP
+
+++++++++++++++++++++++++++++++++++
+network protocols
+-----------------
+IPX/SPX - RIP,SAP,NLSP - 12 digit hexadecimal - server names only; 64 charaters, no special characters; NDS - windows, linux
+NetBEUI - unroutable - ... - netBIOS or computer names; WINS - windows
+AppleTalk - version1: unroutable, version2: RTMP - 24-bit address - version1:NBP, version2:IP naming - ethernet: ELPA; Token ring: token
+TCP/IP - RIP, OSPF - 32-bit address - DNS, ARP, RARP - Windows, UNIX, Linux, MAC, Novell
+
++++++++++++++++++++++++++++++++++++
+Digital transmission hierarchies
+--------------------------------
+T1 - 24 - 1.544Mbps - North American
+T3 - 672 - 44.736Mbps - North American
+E1 - 32 - 2.048Mbps - European
+E3 - 480 - 34.368Mbps - European
+J1 - 24 - 1.544Mbps - Japanese
+J3 - 480 - 32.064Mbps - Japanese
+
++++++++++++++++++++++++++++++++++++
+Optical carriers
+----------------
+OC-1 - 51.84Mbps
+OC-3 - 155.52Mbps
+OC-12 - 622.08Mbps
+OC-24 - 1.244Gbps
+OC-48 - 2.488Gbps
+
++++++++++++++++++++++++++++++++++++
+xDSL Technologies
+-----------------
+ADSL - 18000ft - 1.544Mbps ~ 6.1Mbps - 126kbps ~ 640kbps - Most popular, used for web access and multimedia streaming
+SDSL - 12000ft - 1.544Mbps(US), 2.048Mbps(EU) - 1.544Mbps(US), 2.048Mbps(EU) - WAN connection form company network server to phone co.
+HDSL - 12000ft - 1.544Mbps(2p), 2.05Mbps(3p) - 1.544Mbps(2p), 2.05Mbps(3p) - WAN connection from company network server to phone co.
+IDSL - 18000ft - 128kbps - 128kbps - Transmits data only, similar to ISDN BRI
+CDSL - 18000ft - 1.544Mbps - <1.544Mbps - Used in home and small business; no spitter, known as G lite
+RADSL - n/a - 640kbps ~ 2.2Mbps - 270kbps ~ 1.1Mbps - Same as ADSL
+VDSL - 4500ft - 1.6Mbps ~ 53Mbps - 1.5Mbps ~ 2.3Mbps - ATM networks using fiber optic cable
+
++++++++++++++++++++++++++++++++++++
+TCP/IP protocol suite 
+---------------------
+TCP - transmission control protocol - Enables two hosts to establish connection and exchange network data, connection-oriented.
+UDP - user datagram protocol - enables two hosts to establish connection and exchange network data; connectionless
+FTP - file transfer protocol - downloads or uploads files between hosts; performs directory operations; also offers authentication sec.
+...

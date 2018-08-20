@@ -1,0 +1,14 @@
+Cisco Modes
+-----------
+
+User Mode - Switch>
+Enter Privilege mode - Switch>enable
+Privileged mode - switch#
+Enter configuration mode - switch#configure terminal
+Global config mode - switch(config)#
+Enter interface mode - switch(config)#interface fa0/1
+Interface mode - switch(config-if)
+Return to global configuration - switch(config-if)exit
+Exit global config mode - switch(config)#exit
+Return to use mode - switch#disable
+logout - switch>exit
