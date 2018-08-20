@@ -1,0 +1,43 @@
+Device configuration
+--------------------
+Configure device system name - switch(config)#hostname sw1
+Sets the encrypted enable password - switch(config)#enable secret cisco
+Sets the unencrypted enable password - switch(config)#enable password cisco
+Enable password encryption - switch(config)#service password-encryption
+Configure a message of the day - switch(config)#banner motd $
+Assign IP address to vlan - switch(config)#int vlan 1
+			    switch(config-if)#ip addr 172.30.1.12
+			    255.255.255.0
+Assign default gateway - switch(config)#ip default-gateway 10.1.1.1
+Select one interface - switch(config)#int fa0/1
+Select a range of interfaces - switch(config)#int range fa0/1 - 12
+Set the interface description - switch(config-if)#description
+Add vlan using config mode - switch(config)#vlan 11
+Configure interface fa0/1 @ speed 100 mbps and full duplex - switch(config-if)#speed 100
+							     switch(config-vlan)#duplex full
+Assign interface to vlan - switch(config-if)#switchport access vlan 11
+Enable port security - switch(config-if)#switchport mode access
+		       switch(config-if)#switchport port-security
+		       switch(config-if)#switchport port-security
+		       mac-address sticky
+Disable interface - switch(config-if)shutdown
+Enable interface - switch(config-if)no shutdown
+Configure 5 telnet sessions - switch(config)#line vty 0 4
+			      switch(config-line)#login
+			      switch(config-line)#password cisco
+Enable and define console password - switch(config)#line con 0
+				     switch(config-line)#login
+				     switch(config-line)#password cisco
+Synchronise console messages - switch(config-line)#logging synchronous
+Set the timezone and auto adjust - switch(config)#clock timezone gmt 0
+				   switch(config)#clock summer-time gmt
+				   recurring
+Sets the switch priority for the vlan - switch(config)#spanning-tree vlan 1 priority 4096
+Enables RSTP, PVST, or MST - switch(config)#spanning-tree mode rapid-pvst
+Creates a vlan - switch(config)#vlan 2
+		 switch(config-vlan)#name sales
+Assign an interface to vlan 2 - switch(config-if)#switchport access vlan 2
+Unconditionally forces an interface into trunking - switch(config-if)#switchport mode trunk
+Manually assign a switch to a VTP domain - switch(config)#vtp domain lab
+Changes the VTP mode from the default server mode to client mode - switch(config)#vtp mode client
+Enable the http server to SDM can be used - router(config)#ip http server
