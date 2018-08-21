@@ -1,0 +1,16 @@
+TCP/IP Utilities
+----------------
+config - netware - display IP stack configuration
+ifconfig - UNIX/linux - display IP stack configuration
+winipcfg - windows 95/98 - display IP stack configuration
+ipconfig - windows NT/2000/XP - display IP stack configuration,release/renew DHCP IP address, flush/register DNS - /all /renew etc
+ping - windows/UNIX/linux/Netware - verifies end-to-end nerwork connectivity, uses ICMP echo packets - -t, -a, -n, -l, -f, -i -r -v
+tracert - windows 2000/XP/2003 - traces routes to internet sites based on the number of hops and display time taken - -d, -h, -j, -w
+traceroute - UNIX/Linux - traces routes to internet sites based on the number of hops and displays time taken - ...
+netstat - windows/UNIX/linux/netware - display protocol stats and current TCP/IP network connections - -a,-b,-e,-r,-o,-s,-n,-p
+nbtstat - windows/UNIX/linux/netware - display protocol stats and current TCP/IP net connections using NetBIOS over TCP/IP - -a,-A,-c,-n,-r,-R,-S,-s
+arp - windows/UNIX/linux/netware - display and/or modifies IP to physical address translation tables, displays current ARP cache - -a,-g,-s,-N
+nslookup - windows 2000/XP/2003 - queries a DNS name server; used to troubleshoot DNS and verify DNS resolution - -a,-d,-t exit
+dig - UNIX/linux - nslookup equivalent
+telnet - windows/UNIX/linux/netware - enables a computer to function as a terminal working from a remote computer - -a,-e,-f,-l,-t
+netuse - windowsNT/2000/XP - used to connect to file or print share

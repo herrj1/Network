@@ -1,0 +1,9 @@
+Routing protocols
+-----------------
+RIP - Routing info protocol - Finds the quickest route between two computers; offers a maximum of 16 hops between routers before deciding
+OSPF - Open Shortest Path First - A descendant of RIP that increases its speed and reliability; accepts 256 hops between routers
+IGRP - Interior gateway routing protocol - A propriety protocol from cisco that takes bandwidth, latency, reliability, and current traffic
+EGP - Exterior gateway protocol - A distance vector protocol that uses polling to retrieve routing information
+BGP - Border gateway protocol - Used to span autonomous systems in the internet; used at the edge of networks; designed to supersede EGP
+NLSP - Netware link services protocol - A link state routing protocol that was designed to reduce wasted bandwidth associated with RIP
+RTMP - Routing table maintenance protocol - Used by Appletalk to ensure that all routers in the network have consistent routing information

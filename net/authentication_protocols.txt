@@ -1,0 +1,8 @@
+Authentication protocols
+------------------------
+CHAP - challenge handshake auth protocol - Uses a hashed algorithm MD5 that provides client response encryption, weak, and one-way auth
+MS-CHAP - MS challenge Handshake Auth protocol - has two versions used in Windows systems that offers more security, ver1 not comp ver2
+PAP - Password Auth Protocol - The weakest authentication protocol that sends username and password in clear text over the network RAS
+RADIUS - Remote auth dial-in user service - An industry standard that provides auth, authorization, and accounting services
+Kerberos - ... - A fully-fledge security system that uses secret key cryptography
+EAP - Extensible Auth Protocol - A general protocol often used by a wireless devices to connect to a RADIUS server; TLS uses smart cards

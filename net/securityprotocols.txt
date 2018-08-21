@@ -1,0 +1,10 @@
+Security protocols
+------------------
+IPSec - Internet protocol security - Provides authentication and encryption over the internet; works with IPV4 and IPv6; use to secure VPN
+L2TP - Layer 2 tunneling protocol - Support non-TCP/IP protocols VPN over the internet; combine features of PPTP and L2F
+SSL - Secure sockets layer - Uses a private key to encrypt data that is transferred over the SSL connection
+WEP - Wired Equivalent Privacy - Encrypts and protects data packets over radio frequencies
+WPA - WiFi protected access - Offers improved data encryption and user authentication using the wireless devices MAC address
+AES - Advanced encryption standard - a cryptographic cipher that uses Rijndael algorithm
+PGP - Pretty Good Privacy - An encryption utility based on public key encryption designed to encrypt email transmissions
+802.x - ... - Method for passing EAP over both wired and wireless networks; provides auth services for wireless networks not using PPP

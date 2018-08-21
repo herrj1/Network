@@ -1,0 +1,9 @@
+Common network implementation
+-----------------------------
+Firewall - security - Permits/denies public traffic based on various filtering rules; protection form internet threats - ACL,DMZ
+Proxy server - security, performance - a firewall method that caches web content for improved network performance - web proxy, ip proxy
+Antivirus - security, maintenance - software used to search/remove malicious programs on network computer hard drives - viruses, worms, trojan horses
+VLAN - security, performance - better bandwidth management, reduced administration costs - static/dynamic; VTP; DTP
+intranet - cost, flexibility - A private network based on TCP/IP which resides behind a firewall - ...
+extranet - security, versatility - extension of a corporate intranet - ...
+clustering - fault-tolerance, load balancing - a group of redundant mirrored servers; high availability and scalability

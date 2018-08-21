@@ -1,0 +1,6 @@
+Server operating systems basic capabilities
+-------------------------------------------
+UNIX/linux - Multi-user, multitasking, GUI - etc/password; NIS auth; LDAP - LPD/LPR; FAT16, FAT32, NTFS, EXT2, EXT3; NFS - WINS, Linux, Netware, Mac OS
+Netware - Multi-user, multitasking; GUI - user password, keys stored in NDS; eDirectory - FAT16,FAT32,NTFS,NFS,AppleShare - WINS,Linus,Netware,MacOS
+Windows - Multi-user,multitasking;GUI - domain username/password;AD - LPD/LPR;FAT16;FAT32;NTFS - Wins,Linux,Netware,MacOS
+MacOS - Multi-user,multitasking;GUI - kerberos mechanism;keychain;OD - UNIX-type file system, AppleShare IP - Wins,linux,netware,MacOS

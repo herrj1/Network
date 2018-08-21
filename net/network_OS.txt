@@ -1,0 +1,6 @@
+Network operating system versions
+---------------------------------
+Novell - Netware 3.x, 4.x, 5.x, 6.x
+Microsoft - Windows NT, Windows 2000, Windows Server 2003
+Apple - Mac OS X, AppleShare IP
+UNIX/Linux - SCO ACE, Redhat
