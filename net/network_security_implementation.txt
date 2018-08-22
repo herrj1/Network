@@ -1,0 +1,6 @@
+Network security implementation
+-------------------------------
+Port blocking - intrusion detection - slows down - firewalls, proxy servers
+Packet filtering - intrusion detection - slows down - firewalls, proxy servers
+Authentication - access control - none - NOS logon server
+Encryption - data protection - slows down - IPSec, PKI, PGP, Kerberos, DES

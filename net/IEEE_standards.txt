@@ -1,0 +1,19 @@
+IEEE Standards
+--------------
+802.1 - internetworking
+802.2 - logical link control(LLC)
+802.3 - Ethernet(CSMA/CD)
+802.4 - Token bus LAN
+802.5 - Token ring LAN
+802.6 - Metropolitan Area Network(MAN)
+802.7 - broadband technical advisory
+802.8 - fiber optic
+802.9 - integrated voice/data
+802.10 - network security
+802.11 - wireless networks
+802.12 - demand priority(100VG-Any LAN)
+802.13 - not used
+802.14 - cable modem
+802.15 - wireless personal area network
+802.16 - broadband wireless access
+802.17 - resilient packet ring

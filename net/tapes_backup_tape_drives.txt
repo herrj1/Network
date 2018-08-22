@@ -1,0 +1,6 @@
+Types of backup tape drives
+---------------------------
+QIC - Quarter inch cartridge; formats:3.5",5.25" - 20GB.50GB - 60kbps,125kbps
+Travan - Enhancement of QIC; formats:TR4,TR5 - 4/8GB,10/20GB - 1mbps,1.83mbps
+DAT - digital audio tape; formats:DDS(Digital Data Storage),DLT(Digital Linear Tape) - 40GB(DDS),160GB(DLT) - 4.8mbps,20mbps
+Mammoth - An 8mm backup format used in computer systems; AIT(Advanced intelligent tape) - 10/20GB,20/40GB - 3mbps,6mbps

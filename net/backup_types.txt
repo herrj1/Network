@@ -1,0 +1,6 @@
+Backup types
+------------
+full/normal - backs up all data; longest time to backup - Y - full only
+incremental - backs up files changed or addes since the last backup; faster to backup; uses more tapes - Y - full+every incremental
+differential - backs up files changed or added since the last full backup; faster to restore;uses lesser tapes - N - full+last differential
+mirror/copy - backs up all data; used to make offsite copies - N - ...

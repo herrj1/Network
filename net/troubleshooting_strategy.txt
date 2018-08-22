@@ -1,0 +1,10 @@
+Troubleshooting strategy
+------------------------
+1 - identify the symptoms
+2 - identify the affected area
+3 - establish what has changed
+4 - select the most probable cause
+5 - implement a solution and action plan
+6 - test the result
+7 - recognize the effects of the solution
+8 - document the solution and process
