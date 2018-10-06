@@ -1,6 +1,5 @@
 Cisco Modes
 -----------
-
 User Mode - Switch>
 Enter Privilege mode - Switch>enable
 Privileged mode - switch#
