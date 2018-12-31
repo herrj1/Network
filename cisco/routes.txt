@@ -5,10 +5,10 @@ Defines a local host file. - Router(config)#ip host mypc 10.1.1.3
 Disables DNS lookup. - Router(config)#no ip domain-lookup
 Sets the logical(not physical) bandwidth of interface. - Router(config)#int s0
 						  	 Router(config-if)#bandwidth
-Sets the physical clock - Router(config-if)#clock rate 64000
-Set the serial interface WAN encapsulation. - Router(config-if)#encapsulation hdlc
-Authentication on PPP is optional. - Router(config-if)#ppp authentication chap
-Defines the type of LMI being used. - Router(config-if)#frame-relay lmi-type cisco
+Sets the physical clock - Router(config-if)# clock rate 64000
+Set the serial interface WAN encapsulation. - Router(config-if)# encapsulation hdlc
+Authentication on PPP is optional. - Router(config-if)# ppp authentication chap
+Defines the type of LMI being used. - Router(config-if)# frame-relay lmi-type cisco
 Defines a static route. Renumber static routes have an admin distance of 1. - Router(config)#ip route 50.0.0.0 255.0.0.0 10.1.2.1
 Enables RIP version 1 on all LOCAL interfaces which have a 10.x.x.x address - Router(config)#router rip
 									      Router(config-router)#network 10.0.0.0
