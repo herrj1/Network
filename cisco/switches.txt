@@ -1,4 +1,4 @@
-Device configuration
+Device configurations
 --------------------
 Configure device system name - switch(config)#hostname sw1
 Sets the encrypted enable password - switch(config)#enable secret cisco
