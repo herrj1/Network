@@ -1,5 +1,5 @@
 Types of RAID
--------------
+---------------------
 RAID 0 - 2 - disk stripping without fault tolerance
 RAID 1 - 2 - disk mirroring/duplexing
 RAID 0+1 - 4 - a mirror of stipes
