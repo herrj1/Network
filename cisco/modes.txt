@@ -1,4 +1,4 @@
-Cisco Modes
+Cisco Mode
 -----------
 User Mode - Switch>
 Enter Privilege mode - Switch>enable
