@@ -1,6 +1,6 @@
 IEEE Standards
 --------------
-802.1 - internetworking
+802.1 - internetworkings
 802.2 - logical link control (LLC)
 802.3 - Ethernet (CSMA/CD)
 802.4 - Token bus LAN
