@@ -5,7 +5,7 @@ Net Standards
 802.11 - wireless net - 1, 11, 54 mbps - CSMA/CA - Cell - atmosphere
 FDDI - fiber distributed data interface - 100mbps - token passing - dual ring - fiber optics
 
-+++++++++++++++++++++++++++++++++
+++++++++++++++++++++++++++++++++++++++++++++++++
 
 Ethernet specs
 --------------
