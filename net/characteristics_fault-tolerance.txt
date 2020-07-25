@@ -1,5 +1,5 @@
 Characteristics of fault-tolerance
-----------------------------------
+----------------------------------------------------------
 Power - UPS,SPS,backup generators,cooling fans,processors,surge suppressor,line conditioners
 Link redundancy - Backup links; ISDN, dial-up,microwave wireless radios,secondary ISP, clustering
 Storage - hardware or software RAID, SCSI hard disks, data warehousing
