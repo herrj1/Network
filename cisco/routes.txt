@@ -1,5 +1,5 @@
 iOS Router
-----------------
+----------------------
 Defines a username and password - Router(config)#username sue password cisco
 Defines a local host file. - Router(config)#ip host mypc 10.1.1.3
 Disables DNS lookup. - Router(config)#no ip domain-lookup
